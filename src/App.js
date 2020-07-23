@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import NavbarHorizontal from "./components/NavbarHorizontal";
+import MainContentPart1 from "./components/MainContentPart1";
+import MiddleSection from "./components/MiddleSection";
+import MainContentPart2 from "./components/MainContentPart2";
+import NavbarVertical from "./components/NavbarVertical";
+function App(){
+    return (
+        <div className="container" >
+            <div className="part1">
+                <NavbarHorizontal/>
+                <MainContentPart1/>
+            </div>
+            <MiddleSection/>
+            <div className="part2">
+                <div className="row">
+                    <div className="col-md-4">
+                        <NavbarVertical/>
+                    </div>
+                    <div className="col-md-8">
+                        <MainContentPart2/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    );
 }
 
 export default App;

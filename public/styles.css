@@ -1,0 +1,125 @@
+/* Part1  Page*/
+
+.part1 {
+    border: solid 1px;
+    border-radius: 30px;
+    margin-top: 5%;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 7%;
+}
+
+
+/* Part 2 */
+
+.part2 {
+    border: 1px solid;
+    border-radius: 30px;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+}
+
+
+/* Block Button */
+
+.block-button {
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.block-button button {
+    border-radius: 30px;
+    margin-top: 13%;
+    width: 110%;
+    font-weight: 600;
+}
+
+
+/* Searchbar */
+
+.search-bar {
+    border: 1px solid blue;
+    border-radius: 30px;
+    width: 65%;
+}
+
+
+/* Navbar Horizontal*/
+
+.navbar-button-horizontal {
+    border-radius: 20%;
+}
+
+.navbar-brand {
+    font-size: 220%;
+}
+
+
+/* MainContentPart1 */
+
+.main-content-part1 {
+    text-align: center;
+    margin-top: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.main-content-part1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.main-content-part1 p {
+    font-size: 90%;
+    color: orange;
+    font-weight: 600;
+}
+
+.main-content-part1 h1 {
+    /* font-size: 150%; */
+    font-weight: 800;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.main-content-part1 p,
+h1 {
+    text-align: left;
+}
+
+.main-content-part1 button {
+    padding: 3% 4%;
+    background-color: rgb(204, 156, 67);
+}
+
+
+/* MiddleSection */
+
+.middle-section {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: right;
+}
+
+.middle-section h2 {
+    font-family: 'Dancing Script', cursive;
+}
+
+
+/* Cards */
+
+.holding-card {
+    overflow-x: auto;
+    margin-top: 12%;
+}
+
+.card-class {
+    padding-left: 3%;
+    padding-right: 3%;
+}
