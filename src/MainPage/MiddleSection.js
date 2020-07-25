@@ -1,9 +1,9 @@
 import React from "react";
 
-function MiddleSection(){
+function MiddleSection(props){
     return (
     <div className="middle-section">
-        <h2>... and Live a well Balanced Life!</h2>
+        <h2>{props.content}</h2>
     </div>
     );
 }
