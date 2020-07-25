@@ -3,10 +3,11 @@ import React from "react";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import StarsIcon from '@material-ui/icons/Stars';
 import {BrowserRouter as Router , Route ,Link} from "react-router-dom";
-import {Red ,White,NavItem} from "./style";
+import {Red ,White,NavItem,NavbarWrapper} from "./style";
 function Navbar(){
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+        <NavbarWrapper>
+            <nav className="navbar navbar-expand-lg navbar-light">
             <Link to="/" style={{textDecoration:"none"}}><White><StarsIcon/> Bloc</White><Red>Edu</Red></Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -39,6 +40,7 @@ function Navbar(){
                     </ul>
                 </div>
             </nav>
+        </NavbarWrapper>
     );
 }
 

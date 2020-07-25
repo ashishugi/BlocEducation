@@ -1,12 +1,17 @@
 import styled from "styled-components";
-
+import LibraryImage from "../images/library.jpg";
 const Wrapper1 = styled.div `
-    background-image: url('../src/images/study2.png');
+    background-image: url(${LibraryImage});
     padding: 12% 18%;
     text-align: center;
-    background-color: red;
     color: white;
     font-weight: 900;
+    background-repeat:no-repeat;
+    background-size:cover;
+    @media (min-width:700px) and (max-width:1400px){
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
 `
 const H1 = styled.h1 `
     color: white;
@@ -17,7 +22,10 @@ const P = styled.p `
     color: grey;
 `
 const Wrapper2 = styled.div `
-    padding: 10% 14%;
+    padding-top:10%;
+    padding-bottom:10%;
+    padding-left:10%;
+    padding-right:10%;
     background-color: black;
     text-align: center;
 `
@@ -115,4 +123,39 @@ const Bottom = styled.div `
 const NavItem = styled.span `
     color:white;
 `
-export { Wrapper1, H1, H3, H5, P, NavItem, Wrapper2, Wrapper4, SmallP, Content, Bottom, SearchBar, Search, Wrapper3, Red, White, Line, SubscriptionInput };
+const NavbarWrapper = styled.div `
+    padding-left:5%;
+    padding-right:5%;
+    padding-top:1%;
+    padding-bottom:1%;
+    background-color:black;
+`
+const OuterWrapper = styled.div `
+    position:relative;
+    @media (max-width:800px){
+      display:none;   
+    }
+`
+const InfoCardWrapper = styled.div `
+    position:absolute;
+    background-color:#2F4F4F;
+    /* top:180%;
+    left:30%; */
+    /* height:100%; */
+    width:80%;
+    /* padding-left:4%;
+    padding-right:4%; */
+    left:10%;
+    right:10%;
+    top:-40px;
+    z-index:1;
+    border-radius:12px;
+    text-align:center;
+    
+`
+const Text = styled.span `
+    color:white;
+    font-weight:200;
+    font-size:90%;
+`
+export { Wrapper1, Text, OuterWrapper, InfoCardWrapper, H1, H3, H5, P, NavItem, NavbarWrapper, Wrapper2, Wrapper4, SmallP, Content, Bottom, SearchBar, Search, Wrapper3, Red, White, Line, SubscriptionInput }

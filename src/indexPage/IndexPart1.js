@@ -8,7 +8,7 @@ function IndexPart1() {
         <Wrapper1>
                 <H1>Inventive Solution <div>for Education</div></H1>    
             <br/>
-            <Link className="nav-link" to="/firstpage"><button className="btn btn-warning">Our Courses</button></Link>
+            <Link  to="/firstpage"><button className="btn btn-danger">Our Courses</button></Link>
         </Wrapper1>
     );
 }

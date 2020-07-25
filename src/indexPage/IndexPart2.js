@@ -16,19 +16,19 @@ function IndexPart2(){
             <div className="">
                 <div className="row">
                     <div className="col-md-4 col-sm-12">
-                        <CastForEducationIcon style={{fontSize:"900%" , fill:"red"}}/>
+                        <CastForEducationIcon style={{fontSize:"500%" , fill:"red"}}/>
                         <br/>
                         <H5>Choose a tutor</H5>
                         <SmallP>Learn from the best of the Country</SmallP>
                     </div>
                     <div className="col-md-4 col-sm-12">
-                        <PeopleAltIcon  style={{fontSize:"900%" , fill:"red"}}/>
+                        <PeopleAltIcon  style={{fontSize:"500%" , fill:"red"}}/>
                         <br/>
                         <H5>Choose a tutor</H5>
                         <SmallP>Learn from the best of the Country</SmallP>
                     </div>
                     <div className="col-md-4 col-sm-12">
-                        <NextWeekIcon  style={{fontSize:"900%" , fill:"red"}}/>
+                        <NextWeekIcon  style={{fontSize:"500%" , fill:"red"}}/>
                         <br/>
                         <H5>Choose a tutor</H5>
                         <SmallP>Learn from the best of the Country</SmallP>
