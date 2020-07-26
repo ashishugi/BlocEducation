@@ -2,8 +2,8 @@ import React from "react";
 
 
 import StopIcon from '@material-ui/icons/Stop';
-import TutorData from "./TutorData";
-import Card from "./Card";
+import quizData from "./quizData";
+import QuizCards from "./QuizCards";
 import {Wrapper2 ,H1,P,Content,SearchBar,Search} from "./style";
 function IndexPart4() {
     return (
@@ -14,14 +14,18 @@ function IndexPart4() {
                 <Search></Search>    
             </SearchBar>
             <Content>
-                <div className="row">
-                    {TutorData.map((value,index)=>{
-                        console.log(value.imgSrc);
+                <div className="row" style={{textAlign:"center"}}>
+                    {quizData.map((list,index)=>{
                         return (
-                            <div className="col-md-3 col-sm-12" >
-                                <Card key={index} imgSrc={value.imgSrc}/>
-                                <br/>
-                            </div>
+                            <>
+                                    {list && list.map((details,index)=>{
+                                        return (
+                                            <div className="col-md-3 col-sm-12" >
+                                                <QuizCards key={details.id} imgSrc={details.imgSrc}/>
+                                            </div>
+                                        );
+                                    })}
+                            </>
                         );
                     })}
                 </div>

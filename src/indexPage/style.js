@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import LibraryImage from "../images/library.jpg";
+
+
 const Wrapper1 = styled.div `
     background-image: url(${LibraryImage});
     padding: 12% 18%;
@@ -23,7 +25,7 @@ const P = styled.p `
 `
 const Wrapper2 = styled.div `
     padding-top:10%;
-    padding-bottom:10%;
+    /* padding-bottom:10%; */
     padding-left:10%;
     padding-right:10%;
     background-color: black;
@@ -48,6 +50,7 @@ const H5 = styled.h5 `
 const Content = styled.section `
     margin-top:4%;
     padding-top:5%;
+    text-align:center;
 `
 const SearchBar = styled.div `
     margin-top: 13%;
@@ -138,24 +141,83 @@ const OuterWrapper = styled.div `
 `
 const InfoCardWrapper = styled.div `
     position:absolute;
-    background-color:#2F4F4F;
-    /* top:180%;
-    left:30%; */
-    /* height:100%; */
-    width:80%;
-    /* padding-left:4%;
-    padding-right:4%; */
-    left:10%;
-    right:10%;
+    background-color:#404040;
+    width:70%;
+    left:16%;
+    right:20%;
     top:-40px;
     z-index:1;
-    border-radius:12px;
+    border-radius:8px;
     text-align:center;
-    
+    padding-top:10px;
+    padding-bottom:10px;
 `
 const Text = styled.span `
     color:white;
     font-weight:200;
     font-size:90%;
 `
-export { Wrapper1, Text, OuterWrapper, InfoCardWrapper, H1, H3, H5, P, NavItem, NavbarWrapper, Wrapper2, Wrapper4, SmallP, Content, Bottom, SearchBar, Search, Wrapper3, Red, White, Line, SubscriptionInput }
+const TextWrapper = styled.span `
+    float:right;
+    text-align:left;
+`
+const CardWrapper = styled.div `
+    background-color:black;
+    text-align:center;
+`
+const CardBody = styled.div `
+    height:100%;
+    width:100%;
+    text-align:center;
+    /* border:1px red; */
+    /* background-color:red; */
+
+`
+const OverlayImage = styled.div `
+  position: absolute;
+  background-color:red;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  border:1px red;
+  &:hover{
+      opacity:0.7;
+      background-color: red;
+      color:white;
+      font-weight:600;
+  }
+`
+export {
+    Wrapper1,
+    Text,
+    CardWrapper,
+    CardBody,
+    TextWrapper,
+    OuterWrapper,
+    InfoCardWrapper,
+    H1,
+    H3,
+    H5,
+    P,
+    NavItem,
+    NavbarWrapper,
+    Wrapper2,
+    Wrapper4,
+    SmallP,
+    Content,
+    Bottom,
+    SearchBar,
+    Search,
+    Wrapper3,
+    Red,
+    White,
+    Line,
+    SubscriptionInput,
+    OverlayImage
+};
