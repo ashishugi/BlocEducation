@@ -164,6 +164,9 @@ const TextWrapper = styled.span `
 const CardWrapper = styled.div `
     background-color:black;
     text-align:center;
+    margin:5%;
+    height:100%;
+    width:100%;
 `
 const CardBody = styled.div `
     height:100%;
@@ -181,8 +184,8 @@ const OverlayImage = styled.div `
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
+  height: 200px;
+  width:200px;
   opacity: 0;
   transition: .5s ease;
   border:1px red;
@@ -193,8 +196,22 @@ const OverlayImage = styled.div `
       font-weight:600;
   }
 `
+const BlogCardWrapper = styled.div `
+    margin-bottom:25%;
+    text-align:center;
+    height:100%;
+    width:100%;
+`
+const TutorWrapper = styled.div `
+    margin-bottom:30%;
+    text-align:center;
+    height:100%;
+    width:100%;
+`
 export {
     Wrapper1,
+    TutorWrapper,
+    BlogCardWrapper,
     Text,
     CardWrapper,
     CardBody,
