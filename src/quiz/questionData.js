@@ -7,7 +7,8 @@ const questionData = [
                 op2: "adsfas",
                 op3: "Sdfas",
                 op4: "sadfsa"
-            }
+            },
+            check: true
         },
         {
             id: 2,
@@ -17,7 +18,8 @@ const questionData = [
                 op2: "adsfas",
                 op3: "Sdfas",
                 op4: "sadfsa"
-            }
+            },
+            check: true
         },
         {
             id: 3,
@@ -27,69 +29,81 @@ const questionData = [
                 op2: "adsfas",
                 op3: "Sdfas",
                 op4: "sadfsa"
-            }
+            },
+            check: true
+        },
+        {
+            id: 4,
+            ques: "What is your profession ?",
+            options: {
+                op1: "faa",
+                op2: "adsfas",
+                op3: "Sdfas",
+                op4: "sadfsa"
+            },
+            check: true
         }
+
     ],
     [{
-            id: 4,
+            id: 5,
             ques: "What is you name ?",
             options: {
                 op1: "faa",
                 op2: "adsfas",
                 op3: "Sdfas",
                 op4: "sadfsa"
-            }
-        },
-        {
-            id: 5,
-            ques: "What is your age ?",
-            options: {
-                op1: "faa",
-                op2: "adsfas",
-                op3: "Sdfas",
-                op4: "sadfsa"
-            }
+            },
+            check: true
         },
         {
             id: 6,
-            ques: "What is your profession ?",
-            options: {
-                op1: "faa",
-                op2: "adsfas",
-                op3: "Sdfas",
-                op4: "sadfsa"
-            }
-        }
-    ],
-    [{
-            id: 7,
-            ques: "What is you name ?",
-            options: {
-                op1: "faa",
-                op2: "adsfas",
-                op3: "Sdfas",
-                op4: "sadfsa"
-            }
-        },
-        {
-            id: 8,
             ques: "What is your age ?",
             options: {
                 op1: "faa",
                 op2: "adsfas",
                 op3: "Sdfas",
                 op4: "sadfsa"
-            }
+            },
+            check: true
         },
         {
-            id: 3,
+            id: 7,
             ques: "What is your profession ?",
             options: {
                 op1: "faa",
                 op2: "adsfas",
                 op3: "Sdfas",
                 op4: "sadfsa"
-            }
+            },
+            check: true,
+        },
+        {
+            id: 8,
+            ques: "What is your profession ?",
+            options: {
+                op1: "faa",
+                op2: "adsfas",
+                op3: "Sdfas",
+                op4: "sadfsa"
+            },
+            check: true,
+        }
+    ],
+    [{
+            id: 9,
+            ques: "What is you name ?",
+            check: false,
+        },
+        {
+            id: 10,
+            ques: "What is your age ?",
+            check: false,
+        },
+        {
+            id: 11,
+            ques: "What is your profession ?",
+            check: false,
         }
     ]
 ]

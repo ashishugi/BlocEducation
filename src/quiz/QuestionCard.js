@@ -4,26 +4,28 @@ import CourseData from "../data/courses";
 import Option from "./Option";
 import {Wrapper2} from "./style";
 function QuestionCard(props){
-    console.log(props);
+    console.log(props.check);
     return (
-        <Wrapper2>
-            <div className="row">
-                <div className="col-md-6 col-sm-12">
-                    <Option title={props.options.op1}/>
+        <>
+            <Wrapper2>
+                <div className="row">
+                    <div className="col-md-6 col-sm-12" style={{marginTop:"2px" ,marginBottom:"2px"}}>
+                        <Option title={props.options.op1}/>
+                    </div>
+                    <div className="col-md-6 col-sm-12" style={{marginTop:"2px" ,marginBottom:"2px"}}>
+                        <Option title={props.options.op2}/>
+                    </div>
                 </div>
-                <div className="col-md-6 col-sm-12">
-                    <Option title={props.options.op2}/>
+                <div className="row">
+                    <div className="col-md-6 col-sm-12  " style={{marginTop:"2px" ,marginBottom:"2px"}}>
+                        <Option title={props.options.op3}/>
+                    </div>
+                    <div className="col-md-6 col-sm-12" style={{marginTop:"2px" ,marginBottom:"2px"}}>
+                        <Option title={props.options.op4}/>
+                    </div>
                 </div>
-            </div>
-            <div className="row">
-                <div className="col-md-6 col-sm-12  ">
-                    <Option title={props.options.op3}/>
-                </div>
-                <div className="col-md-6 col-sm-12">
-                    <Option title={props.options.op4}/>
-                </div>
-            </div>
-        </Wrapper2>
+            </Wrapper2>
+        </>
     );
 }
 export default QuestionCard;

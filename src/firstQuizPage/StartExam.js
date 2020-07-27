@@ -1,12 +1,13 @@
 import React from "react";
 
+import {BrowserRouter as Router , Route ,Link} from "react-router-dom";
 
 import MultiCarousel from "./MultiCarousel";
 import startExamData from "./startExamData";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import CourseCard from "./CourseCard";
-import { H3 } from "./style";
+import { H3, Content } from "./style";
 
 const responsive = {
     superLargeDesktop: {
@@ -36,8 +37,15 @@ function StartExam() {
                 {startExamData.map((details,index)=>{
                         console.log(details);
                         return (
-                            <CourseCard desc = {details.courseName} imgSrc={details.courseImageSrc} key={details.courseId}/> 
-                            );
+                          <Content>
+                              <Link className="nav-link" to="/">
+                                  <CourseCard 
+                                  desc = {details.courseName} 
+                                  imgSrc={details.courseImageSrc}
+                                  key={details.courseId}/> 
+                               </Link>
+                          </Content>
+                              );
                     })}
             </Carousel>
         </>

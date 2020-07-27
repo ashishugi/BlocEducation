@@ -1,8 +1,9 @@
 import React from "react";
 
+import {BrowserRouter as Router , Route ,Link} from "react-router-dom";
 
 import MultiCarousel from "./MultiCarousel";
-import startExamData from "./startExamData";
+import coursesData from "./coursesData";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import CourseCard from "./CourseCard";
@@ -31,12 +32,17 @@ function StartExam() {
 
     return (
         <>
-          <H3>Start Your Exam Now</H3>
+          <H3>Your Courses</H3>
             <Carousel responsive={responsive}>
-                {startExamData.map((details,index)=>{
+                {coursesData.map((details,index)=>{
                         console.log(details);
                         return (
-                            <CourseCard desc = {details.courseName} imgSrc={details.courseImageSrc} key={details.courseId}/> 
+                          <Link className="nav-link" to="/">
+                              <CourseCard 
+                              desc = {details.courseName} 
+                              imgSrc={details.courseImageSrc} 
+                              key={details.courseId}/> 
+                          </Link>
                             );
                     })}
             </Carousel>
