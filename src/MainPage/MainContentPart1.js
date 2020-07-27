@@ -11,7 +11,7 @@ function MainContentPart1(){
                     <H1>
                         An Education Product like No Other
                     </H1>
-                    <Link className="nav-link" to="/secondPage"> <Button >Let's Go</Button></Link>
+                    <Link className="nav-link" to="/quizPage1"> <Button >Let's Go</Button></Link>
                 </div>
                 <div className="col-md-6 col-sm-12">
                     <Img src={require("../images/study3.jpg")} alt="studyPic"/>

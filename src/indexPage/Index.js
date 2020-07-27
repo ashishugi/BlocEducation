@@ -8,6 +8,8 @@ import IndexPart4 from "./IndexPart4";
 import IndexPart5 from "./IndexPart5";
 import IndexPart6 from "./IndexPart6";
 import InfoCard from "./InfoCard";
+
+
 function Index(){
     return (
         <div className="fluid">
