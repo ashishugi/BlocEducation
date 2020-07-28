@@ -13,8 +13,8 @@ function QuizCards(props){
         setName(false);
     }
     return (
-        <CardWrapper style={{textAlign:"center"}}   onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-            <div style={{ width: '15rem',marginTop:"3%",marginBottom:"3%"}}>
+        <CardWrapper onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} style={{margin:"1%"}}>
+            <div >
                 <img onMouseOver={handleMouseOver}   style={{height:"200px" , width:"100%",objectFit:"cover"}} src={props.imgSrc}  />
                 <Card.Body style={!name? {fontWeight:"900",backgroundColor:"black" , color:"red"}:{fontWeight:"900", backgroundColor:"red",color:"white"}}>
                     <Card.Title style={{fontSize:"100%"}}>Business Management</Card.Title>

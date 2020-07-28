@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import LibraryImage from "../images/library.jpg";
+import { style } from "@material-ui/system";
 
 
 const Wrapper1 = styled.div `
@@ -69,11 +70,11 @@ const Search = styled.input.attrs({ type: 'search', placeholder: "Search Type co
     padding-top:1%;
     padding-bottom:1%;
     font-weight:700;
-    border:0px solid black;
+    border: solid black;
     &:hover{
         border: solid white;
         /* transition-delay:0.2s; */
-        transition: all .4s ease;
+        transition: all .4s ease-out;
 
     }
 `
@@ -169,7 +170,6 @@ const TextWrapper = styled.span `
 const CardWrapper = styled.div `
     background-color:black;
     text-align:center;
-    margin:5%;
     height:100%;
     width:100%;
 `
@@ -184,7 +184,6 @@ const CardBody = styled.div `
 const OverlayImage = styled.div `
   position: absolute;
   background-color:red;
-
   top: 0;
   bottom: 0;
   left: 0;
@@ -193,7 +192,7 @@ const OverlayImage = styled.div `
   width:100%;
   opacity: 0;
   transition: .5s ease;
-  border:1px red;
+  /* border:1px red; */
   &:hover{
       opacity:0.7;
       background-color: red;
@@ -213,9 +212,23 @@ const TutorWrapper = styled.div `
     height:100%;
     width:100%;
 `
-
+const CardDeck = styled.div `
+  height:100%;
+  width:100%;
+  text-align:center;
+`
+const QuizWrapper = styled.div `
+  padding-left:7%;
+  padding-right:7%;
+  padding-top:10%;
+  @media (max-width:760px){
+      padding-left:12%;
+      padding-right:12%;
+  }
+`
 export {
     Wrapper1,
+    QuizWrapper,
     TutorWrapper,
     BlogCardWrapper,
     Text,
@@ -242,5 +255,6 @@ export {
     White,
     Line,
     SubscriptionInput,
-    OverlayImage
-};
+    OverlayImage,
+    CardDeck
+}

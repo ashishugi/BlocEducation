@@ -13,19 +13,15 @@ function Cards(props){
         setName(false);
     }
     return (
-        <TutorWrapper>
-                <CardWrapper>
-                    <div>
-                        <img style={{backgroundColor:"red"}}
-                        src={props.imgSrc} style={{height:"200px" , width:"200px"}} 
-                        onMouseOver={handleMouseOut} 
-                        onMouseOut={handleMouseOut} />
+                <>
+                    <div onMouseOver={handleMouseOut} 
+                        onMouseOut={handleMouseOut}  style={{margin:"2%"}}>
+                        <img
+                        src={props.imgSrc} style={{height:"200px" , width:"100%"}} 
+                        />
                     </div>
-                    {!name?<OverlayImage>
-                        <div class="text">Hello World</div>
-                    </OverlayImage>:""}
-                </CardWrapper>
-        </TutorWrapper>
+                    {name?<h1 style={{color:"white"}}>{props.name}</h1>:""}
+                </>
     );
 }
 

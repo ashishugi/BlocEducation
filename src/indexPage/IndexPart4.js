@@ -4,7 +4,7 @@ import React from "react";
 import StopIcon from '@material-ui/icons/Stop';
 import quizData from "./quizData";
 import QuizCards from "./QuizCards";
-import {Wrapper2 ,H1,P,Content,SearchBar,Search} from "./style";
+import {Wrapper2,QuizWrapper ,H1,P,Content,SearchBar,Search} from "./style";
 function IndexPart4() {
     return (
         <Wrapper2>
@@ -13,8 +13,8 @@ function IndexPart4() {
             <SearchBar>
                 <Search></Search>    
             </SearchBar>
-            <Content>
-                <div className="row" style={{textAlign:"center"}}>
+            <QuizWrapper>
+                <div className="row">
                     {quizData.map((list,index)=>{
                         return (
                             <>
@@ -29,7 +29,7 @@ function IndexPart4() {
                         );
                     })}
                 </div>
-           </Content>
+           </QuizWrapper>
         </Wrapper2>
     );
 }

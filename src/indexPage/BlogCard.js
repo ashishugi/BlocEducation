@@ -19,10 +19,9 @@ function BlogCard(props) {
     var currDate = Date();
     var today = currDate.get
     return(
-        <BlogCardWrapper>
-            <CardWrapper style={{textAlign:"center"}}>
-                    <div style={{textAlign:"center"}}   onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                        <div style={{ width: '15rem',marginTop:"3%",marginBottom:"3%"}}>
+            <CardWrapper>
+                    <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+                        <div >
                             <img onMouseOver={handleMouseOver}   style={{height:"200px" , width:"100%",objectFit:"cover"}} src={props.imgSrc}  />
                             <CardBody style={!name?
                                 {fontWeight:"900",backgroundColor:"white" , color:"black"}:
@@ -32,7 +31,6 @@ function BlogCard(props) {
                         </div>
                     </div>
             </CardWrapper>
-        </BlogCardWrapper>
 
     );
 }

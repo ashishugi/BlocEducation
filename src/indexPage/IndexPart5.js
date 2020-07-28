@@ -15,16 +15,18 @@ function IndexPart5() {
                     <P><StopIcon style={{fill: "red"}}/> <StopIcon style={{fill: "red"}}/> Knowledge Sharing <StopIcon style={{fill: "red"}}/> <StopIcon style={{fill: "red"}}/></P>
                     <H1>Blogs</H1>
             </div>
-            <div style={{paddingTop:"10%"}}>
+            <div style={{paddingTop:"10%", paddingLeft:"12%" , paddingRight:"12%"}}>
                     <Carousel indicators={true} controls={false} slide={true} interval={50000000}>
                                     {blogsData.map((list,index)=>{
                                         return (
                                             <Carousel.Item>
-                                                <div className="row justify-content-md-center">
+                                                <div className="row" style={{paddingBottom:"10%" ,width:"100%" }}>
                                                 {list && list.map((details,index)=>{
                                                         return (
-                                                            <div className="col-md-4 col-sm-12 justify-content-md-center">
-                                                            <BlogCard key={details.id} imgSrc={details.imgSrc} title={details.title} 
+                                                            <div className="col-md-4 col-sm-12 ">
+                                                            <BlogCard key={details.id}
+                                                             imgSrc={details.imgSrc} 
+                                                             title={details.title} 
                                                                 desc={details.desc}/>
                                                         </div>
                                                         );
