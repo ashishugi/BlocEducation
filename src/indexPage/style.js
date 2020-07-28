@@ -184,7 +184,7 @@ const CardBody = styled.div `
 const OverlayImage = styled.div `
   position: absolute;
   background-color:red;
-  top: 0;
+  top: 0%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -226,7 +226,32 @@ const QuizWrapper = styled.div `
       padding-right:12%;
   }
 `
+const OverlayCard = styled.div `
+  /* color:"white" ,fontSize:"90%",paddingTop:"40%",display:"inline-block"  */
+  color:white;
+  font-size:90%;
+  display:inline-block;
+  position:relative;
+  left:2%;
+  top:15%;
+  text-align:left;
+`
+const ImageWrapper = styled.div `
+
+  /* background-color:red; */
+`
+const SpecialText = styled.div `
+    position:absolute;
+    color:white;
+    bottom:10%;
+    right:70%;
+    opacity:1;
+    
+`
 export {
+    ImageWrapper,
+    SpecialText,
+    OverlayCard,
     Wrapper1,
     QuizWrapper,
     TutorWrapper,

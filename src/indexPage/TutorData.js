@@ -2,7 +2,7 @@ const TutorData = [
     [{
             id: 1,
             imgSrc: require("../images/face1.jpeg"),
-            name: "Ashish"
+            name: "Ashish "
         },
         {
             id: 2,
@@ -12,12 +12,12 @@ const TutorData = [
         {
             id: 3,
             imgSrc: require("../images/face3.jpeg"),
-            name: "Ashish"
+            name: "ABC XYZ"
         },
         {
             id: 4,
             imgSrc: require("../images/face4.jpeg"),
-            name: "Ashish"
+            name: "Robert"
         },
         {
             id: 5,

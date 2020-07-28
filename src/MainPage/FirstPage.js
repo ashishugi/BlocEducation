@@ -1,6 +1,6 @@
 import React from "react";
 
-import NavbarHorizontal from "../components/NavbarHorizontal";
+import NavbarHorizontal from "./NavbarHorizontal";
 import MainContentPart1 from "./MainContentPart1";
 import {Wrapper} from "./style";
 function FirstPage(){

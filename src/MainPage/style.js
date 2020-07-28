@@ -62,4 +62,7 @@ const Wrapper3 = styled.div `
     padding-top: 7%;
 `
 
-export { P, H1, Button, Img, Content, Wrapper, Wrapper2, SearchBar, Heading, Wrapper3 };
+const BrandName = styled.h1 `
+    font-size: 220%;
+`
+export { BrandName, P, H1, Button, Img, Content, Wrapper, Wrapper2, SearchBar, Heading, Wrapper3 };
