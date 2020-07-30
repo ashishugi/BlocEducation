@@ -5,7 +5,7 @@ import CastForEducationIcon from '@material-ui/icons/CastForEducation';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import NextWeekIcon from '@material-ui/icons/NextWeek';
 
-import {Wrapper2,H1,H5,P ,SmallP} from "./style";
+import {Wrapper2,H1,H5,P ,SmallP,HrWrapper} from "./style";
 function IndexPart2(){
     return (
         <Wrapper2>
@@ -13,23 +13,31 @@ function IndexPart2(){
             <H1>How it Works</H1>
             <br/>
             <br/>
-            <div className="horizontal-line">
+            <div className="container">
                 <div className="row">
-                    <div className="col-md-4 col-sm-12">
-                        <div className="icon">
+                    <div className="col-md-2 col-sm-12">
                             <CastForEducationIcon style={{fontSize:"500%" , fill:"red"}}/>
-                        </div>
                         <br/>
                         <H5>Choose a tutor</H5>
                         <SmallP>Learn from the best of the Country</SmallP>
                     </div>
-                    <div className="col-md-4 col-sm-12">
+                    <div className="col-md-3 align-self-center" >
+                       <HrWrapper >
+                            <hr/>
+                       </HrWrapper>
+                    </div>
+                    <div className="col-md-2 col-sm-12">
                         <PeopleAltIcon  style={{fontSize:"500%" , fill:"red"}}/>
                         <br/>
                         <H5>Collaborate</H5>
                         <SmallP>Some text will be placed here </SmallP>
                     </div>
-                    <div className="col-md-4 col-sm-12">
+                    <div className="col-md-3 align-self-center">
+                        <HrWrapper>
+                            <hr/>
+                       </HrWrapper>
+                    </div>
+                    <div className="col-md-2 col-sm-12">
                         <NextWeekIcon  style={{fontSize:"500%" , fill:"red"}}/>
                         <br/>
                         <H5>Subscribe </H5>

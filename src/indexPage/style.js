@@ -246,10 +246,17 @@ const SpecialText = styled.div `
     bottom:10%;
     right:70%;
     opacity:1;
-    
+`
+const HrWrapper = styled.div `
+    color:white;
+    height:100%;
+    width:100%;
+    border-top:2px dashed white;
+    vertical-align:middle;
 `
 export {
     ImageWrapper,
+    HrWrapper,
     SpecialText,
     OverlayCard,
     Wrapper1,

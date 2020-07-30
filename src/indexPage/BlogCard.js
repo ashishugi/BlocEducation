@@ -19,7 +19,7 @@ function BlogCard(props) {
     var currDate = Date();
     var today = currDate.get
     return(
-            <CardWrapper>
+            <CardWrapper style={{margin:"2%"}}>
                     <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
                         <div >
                             <img onMouseOver={handleMouseOver}   style={{height:"200px" , width:"100%",objectFit:"cover"}} src={props.imgSrc}  />
