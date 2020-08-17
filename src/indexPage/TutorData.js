@@ -2,17 +2,17 @@ const TutorData = [
     [{
             id: 1,
             imgSrc: require("../images/face1.jpeg"),
-            name: "Ashish "
+            name: "Max Smith"
         },
         {
             id: 2,
             imgSrc: require("../images/face2.jpeg"),
-            name: "Ashish"
+            name: "Maxwell buch"
         },
         {
             id: 3,
             imgSrc: require("../images/face3.jpeg"),
-            name: "ABC XYZ"
+            name: "Angela Louis"
         },
         {
             id: 4,
@@ -22,63 +22,63 @@ const TutorData = [
         {
             id: 5,
             imgSrc: require("../images/face5.jpeg"),
-            name: "Ashish"
+            name: "John Berg"
         },
         {
             id: 6,
             imgSrc: require("../images/face6.jpeg"),
-            name: "Ashish"
+            name: "Adam"
         },
         {
             id: 7,
             imgSrc: require("../images/face7.jpeg"),
-            name: "Ashish"
+            name: "Leo"
         },
         {
             id: 8,
             imgSrc: require("../images/face8.jpeg"),
-            name: "Ashish"
+            name: "Peter haris"
         }
     ],
     [{
             id: 9,
             imgSrc: require("../images/study1.png"),
-            name: "Ashish"
+            name: "ABC"
         },
         {
             id: 10,
             imgSrc: require("../images/study2.png"),
-            name: "Ashish"
+            name: "ABC"
         },
         {
             id: 11,
             imgSrc: require("../images/study3.jpg"),
-            name: "Ashish"
+            name: "ABC"
         },
         {
             id: 12,
             imgSrc: require("../images/img1.jpeg"),
-            name: "Ashish"
+            name: "ABC"
         },
         {
             id: 13,
             imgSrc: require("../images/img2.jpeg"),
-            name: "Ashish"
+            name: "ABC"
         },
         {
             id: 14,
             imgSrc: require("../images/study1.png"),
-            name: "Ashish"
+            name: "XYZ"
         },
         {
             id: 15,
             imgSrc: require("../images/study2.png"),
-            name: "Ashish"
+            name: "XYZ"
         },
         {
             id: 16,
             imgSrc: require("../images/study3.jpg"),
-            name: "Ashish"
+            name: "XYZ"
         }
     ],
 ]
