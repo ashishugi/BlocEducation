@@ -7,7 +7,7 @@ import {Red ,White,NavItem,NavbarWrapper} from "./style";
 function Navbar(){
     return (
         <NavbarWrapper>
-            <nav className="navbar navbar-expand-lg navbar-light">
+            <nav className="navbar navbar-expand-lg navbar-dark">
             <Link to="/"  style={{textDecoration:"none"}}><White><StarsIcon/> Bloc</White><Red>Edu</Red></Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
