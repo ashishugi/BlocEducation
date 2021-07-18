@@ -71,6 +71,7 @@ const Search = styled.input.attrs({ type: 'search', placeholder: "Search Type co
     padding-bottom:1%;
     font-weight:700;
     border: solid black;
+    outline:none;
     &:hover{
         border: solid white;
         /* transition-delay:0.2s; */
